@@ -1,0 +1,288 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+* {
+	box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+}
+body {
+
+}
+img {
+    width: 100%;
+    display: block;
+}
+.wrapper {
+	height: inherit;
+	max-width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.home-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url(../images/soil.jpg);
+}
+
+.messages {
+    width: 100%;
+    background-color: beige;
+}
+
+.title {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    left: 22%;
+    border-left: 3px solid #a49b95;
+    border-radius: 6px;
+    padding: 35px;
+    box-shadow: 10px 10px 18px;
+}
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #3c035e;
+    text-align: center;
+    text-shadow: 5px 5px 0 #babcc5, 7px 7px 0 #3c035e;
+}
+h2 {
+    font-size: 41px;
+    font-weight: bold;
+    color: #3c035e;
+    text-align: center;
+    margin: 50px 0;
+}
+h3 {
+    font-size: 34px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h4 {
+    font-size: 21px;
+    margin: 43px 0 20px;
+    font-weight: bold;
+}
+hr {
+    width: 60%;
+}
+.frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 calc(50% - 512px);
+}
+.slider {
+    display: block;
+    max-width: 900px;
+    min-width: 600px;
+    margin: 16px 0;
+    overflow: hidden;
+    background: url(../images/clock-back.jpg) no-repeat center;
+}
+
+.slider img {
+    height: auto;
+    width: 100%;
+    display: none;
+}
+.slider .is-showing {
+    display: inline;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 10px;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0 25px;
+    padding: 10px 15px;
+    transition: all .3s;
+}
+nav ul li:hover {
+    box-shadow: 5px 5px 12px #81795c;
+    transform: scale(1.02);
+    border-top: #e5e4de 0.2px solid;
+}
+
+nav a {
+    display: block;
+    font-size: 21px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+article a {
+    display: block;
+    font-size: 21px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+article a:hover {
+    color: #5858d9;
+    border-top: #e5e4de 0.2px solid;
+    box-shadow: 7px 9px 12px #81795c;
+    transform: scale(1.01);
+}
+
+nav a:hover {
+    color: #5858d9;
+}
+
+main {
+    width: 100%;
+    padding: 0 calc(50% - 512px);
+    margin: 0 0 40px;
+    
+}
+
+.section-table {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    height: 500px;
+    margin: 20px 0;
+}
+
+article {
+    padding: 45px 0 0;
+}
+
+.articles {
+    padding: 30px 20px;
+    border-left: 1px solid;
+}
+
+article ul li {
+    
+}
+
+article ul li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.a-article:after {
+    content: attr(title);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.article-img {
+    max-width: 200px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+article hr {
+    width: 50%;
+    clear: both;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 65px 0;
+
+}
+
+section a {
+    cursor: pointer;
+    color: #3f3f3f;
+    text-decoration: none;
+
+
+}
+
+.section-articles {
+    width: 30%;
+    border: 1px solid #c5b88d;
+    margin: 20px 0;
+    transition: all 0.3s;
+}
+
+.section-articles:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 15px;
+}
+
+.section-articles h4 {
+    width: 100%;
+    text-align: center;
+    margin: 7px 0;
+
+}
+
+footer {
+    width: 100%;
+    background: url(../images/foot-ground.jpg) no-repeat center;
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 477px;
+    margin: 0;
+    background-size: cover;
+}
+footer ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 0 25px;
+    justify-content: center;
+}
+footer ul li {
+    padding: 10px 15px;
+    margin: 0 25px 20px;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    background: transparent;
+    transition: all .3s;
+}
+footer ul li:hover {
+    box-shadow: 5px 5px 12px #81795c;
+    transform: scale(1.01);
+}
+
+footer ul li a {
+    color: #fff;
+    display: block;
+    font-size: 21px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+/*footer ul li a:hover {
+    transform: scale(1.01);
+}*/
+
+
+.article-titles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.article-titles h3 {
+    text-align: left;
+}
